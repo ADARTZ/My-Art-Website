@@ -1,4 +1,3 @@
-/*=============== SEARCH ===============*/
 const searchButton = document.getElementById('search-button'),
       searchClose = document.getElementById('search-close'),
       searchContent = document.getElementById('search-content')
@@ -15,8 +14,6 @@ if(searchClose){
     })
 }
 
-
-/*=============== LOGIN ===============*/
 const loginButton = document.getElementById('login-button'),
       loginClose = document.getElementById('login-close'),
       loginContent = document.getElementById('login-content')
@@ -33,8 +30,6 @@ if(loginClose){
     })
 }
 
-
-/*=============== ADD SHADOW HEADER ===============*/
 const shadowHeader = () =>{
     const header = document.getElementById('header')
 
@@ -43,8 +38,6 @@ const shadowHeader = () =>{
 }
 window.addEventListener('scroll', shadowHeader)
 
-
-/*=============== HOME SWIPER ===============*/
 let swiperHome = new Swiper('.home__swiper', {
     loop: true,
     spaceBetween: -24,
@@ -65,8 +58,6 @@ let swiperHome = new Swiper('.home__swiper', {
 
   });
 
-
-/*=============== FEATURED SWIPER ===============*/
 let swiperFeatured = new Swiper('.featured__swiper', {
     loop: true,
     spaceBetween: 16,
@@ -89,8 +80,6 @@ let swiperFeatured = new Swiper('.featured__swiper', {
 
   });
 
-
-/*=============== NEW SWIPER ===============*/
 let swiperNew = new Swiper('.new__swiper', {
     loop: true,
     spaceBetween: 16,
@@ -104,8 +93,6 @@ let swiperNew = new Swiper('.new__swiper', {
 
   });
 
-
-/*=============== TESTIMONIAL SWIPER ===============*/
 let swiperTestimonial = new Swiper('.testimonial__swiper', {
     loop: true,
     spaceBetween: 16,
@@ -123,8 +110,6 @@ let swiperTestimonial = new Swiper('.testimonial__swiper', {
 
   });
 
-
-/*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () =>{
     const scrollUp = document.getElementById('scroll-up')
 
@@ -133,8 +118,6 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp)
 
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 
 const scrollActive = () =>{
@@ -156,7 +139,6 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 
 
-/*=============== DARK LIGHT THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'ri-sun-line'
@@ -183,7 +165,6 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
